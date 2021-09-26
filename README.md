@@ -1,7 +1,7 @@
 # rpi-nginx-webdav
 
 ```bash
-docker build -t rpi-nginx-webdav .
+docker build --build-arg USER_ID=$(id -u mupimenov) --build-arg GROUP_ID=$(id -g mupimenov) -t rpi-nginx-webdav .
 ```
 
 ```bash
